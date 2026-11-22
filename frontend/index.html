@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff4f8" />
+  <meta name="description" content="TaskFlow — a little space for your big plans." />
+  <title>TaskFlow ♡ My Little To-Do Space</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="TaskFlow home">
+        <span class="brand-logo" role="img" aria-label="TaskFlow mascot: a kawaii kitty with a bow and a check badge"><svg viewBox="0 0 120 100" aria-hidden="true"><path d="M10 90 C30 78 46 98 66 88 S100 80 112 90" fill="none" stroke="#ffb6cc" stroke-width="5" stroke-linecap="round"/>
+<path d="M16 92 C32 84 48 99 66 91" fill="none" stroke="#ffe1ea" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+<path d="M30 50 L23 17 L50 33 Q60 29 70 33 L97 17 L90 50 Q99 78 60 86 Q21 78 30 50Z" fill="#fff1f6" stroke="#b07a92" stroke-width="3.2" stroke-linejoin="round"/>
+<path d="M30 28 L29 21 L40 27Z M90 28 L91 21 L80 27Z" fill="#ffc3d6"/>
+<path d="M44 55q5-6 10 0M66 55q5-6 10 0" fill="none" stroke="#6b4a5c" stroke-width="3.2" stroke-linecap="round"/>
+<ellipse cx="39" cy="65" rx="6" ry="4" fill="#ff8fb0" opacity=".55"/><ellipse cx="81" cy="65" rx="6" ry="4" fill="#ff8fb0" opacity=".55"/>
+<path d="M55 64q2.5 4 5 0q2.5 4 5 0" fill="none" stroke="#6b4a5c" stroke-width="2.6" stroke-linecap="round"/>
+<path d="M14 58 L4 56 M14 64 L4 66 M106 58 L116 56 M106 64 L116 66" stroke="#b07a92" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M88 33 C76 20 68 31 75 39 C80 43 86 38 88 33Z" fill="#ffa9c4" stroke="#b07a92" stroke-width="2.6" stroke-linejoin="round"/>
+<path d="M88 33 C99 20 110 30 103 40 C98 46 90 38 88 33Z" fill="#ffa9c4" stroke="#b07a92" stroke-width="2.6" stroke-linejoin="round"/>
+<circle cx="88" cy="34" r="4.6" fill="#ff8fb0" stroke="#b07a92" stroke-width="2.4"/>
+<circle cx="95" cy="78" r="15" fill="#b8e6c6" stroke="#b07a92" stroke-width="3"/>
+<path d="M87.5 78 L93 84 L103.5 71" fill="none" stroke="#fff" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 14 Q19.4 20.6 26 22 Q19.4 23.4 18 30 Q16.6 23.4 10 22 Q16.6 20.6 18 14Z" fill="#ffe08a" stroke="#b07a92" stroke-width="1.6" stroke-linejoin="round" class="twinkle"/></svg></span>
+        <span class="brand-name">TaskFlow<span>♡</span></span>
+        <small>My Little To-Do Space</small>
+      </a>
+      <nav class="nav-list" aria-label="Main navigation">
+        <button class="nav-item active" data-view="dashboard"><span>⌂</span> Dashboard</button>
+        <button class="nav-item" data-view="all"><span>▤</span> My Tasks</button>
+        <button class="nav-item" data-view="today"><span>▦</span> Today</button>
+        <button class="nav-item" data-view="upcoming"><span>▧</span> Upcoming</button>
+        <button class="nav-item" data-view="completed"><span>✓</span> Completed</button>
+        <button class="nav-item" data-view="calendar"><span>▦</span> My Calendar</button>
+        <button class="nav-item" data-view="important"><span>☆</span> Important</button>
+      </nav>
+      <div class="sidebar-label">YOUR LITTLE WORLD</div>
+      <button class="nav-item" data-view="categories"><span>♡</span> Categories</button>
+      <button class="nav-item" data-view="diary"><span>✎</span> My Diary</button>
+      <button class="nav-item" data-view="stickers"><span>✿</span> Sticker Studio</button>
+      <button class="nav-item" data-view="memories"><span>▧</span> Memory Garden</button>
+      <button class="nav-item" id="themeToggle"><span>☾</span> Switch theme</button>
+      <div class="sidebar-art" aria-hidden="true">
+        <div class="flower">✿</div><div class="kitty">૮ ˶ᵔ ᵕ ᵔ˶ ა</div>
+        <p>one step at a time</p>
+        <span>✧ ·˚ ༘</span>
+      </div>
+      <div class="sidebar-foot">made with love <span>♡</span></div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation">☰</button>
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search your little tasks..." /></label>
+        <div class="top-actions"><span class="sparkle">✧</span><button class="icon-btn" aria-label="Notifications" id="notifyBtn">♧<i></i></button><div class="avatar"></div><span class="profile-name" id="profileName" title="Click to change your name"></span><button class="primary-btn" id="addTaskTop">＋ Add Task</button></div>
+      </header>
+
+      <section class="welcome-row">
+        <div class="welcome-copy">
+          <div class="eyebrow">YOUR DAY, YOUR WAY <span>✧</span></div>
+          <h1 id="greeting"></h1>
+          <div class="motivation-bar" id="motivation"><span class="mot-icon">✦</span><span class="mot-text"></span></div>
+          <div class="tiny-tags"><span>✿ dream big</span><span>♡ stay gentle</span><span>✧ keep growing</span></div>
+        </div>
+        <div class="plan-note">
+          <span class="tape"></span>
+          <div class="note-title" id="planTitle" contenteditable="true" spellcheck="false" title="Click to rename ✎"></div>
+          <ul class="plan-list" id="planList"></ul>
+          <form class="plan-add" id="planForm"><input id="planInput" maxlength="60" autocomplete="off" placeholder="＋ add to my plan" aria-label="Add something to your plan"></form>
+          <button type="button" class="plan-clear" id="planClear">clear ticked ✧</button>
+          <span class="note-doodle">✿</span>
+        </div>
+        <div class="window-art" aria-hidden="true"><div class="window-sky">☾　✦</div><div class="curtain"></div><div class="plant">🌷</div></div>
+      </section>
+
+      <section class="reminder-banner" id="reminderBanner" aria-label="Upcoming reminders" hidden></section>
+
+      <section class="stats-grid" aria-label="Task statistics">
+        <article class="stat-card pink"><span class="stat-icon">♡</span><div><strong id="totalCount">0</strong><span>Total Tasks</span></div><small>all your little goals</small><b class="corner-doodle">✧</b></article>
+        <article class="stat-card lilac"><span class="stat-icon">✓</span><div><strong id="completedCount">0</strong><span>Completed</span></div><small>look at you go!</small><b class="corner-doodle">✿</b></article>
+        <article class="stat-card mint"><span class="stat-icon">☘</span><div><strong id="pendingCount">0</strong><span>In Progress</span></div><small>you've got this</small><b class="corner-doodle">♡</b></article>
+        <article class="stat-card peach"><span class="stat-icon">!</span><div><strong id="overdueCount">0</strong><span>Overdue</span></div><small>one thing at a time</small><b class="corner-doodle">✧</b></article>
+      </section>
+
+      <section class="content-grid">
+        <div class="tasks-panel panel">
+          <div class="panel-heading">
+            <div><span class="section-kicker">A FRESH LITTLE START</span><h2 id="viewTitle">My Tasks <span>♡</span></h2></div>
+            <button class="add-inline" id="addTaskInline">＋ New task</button>
+          </div>
+          <div class="toolbar">
+            <div class="filter-pills" id="statusFilters"><button class="pill selected" data-filter="all">All</button><button class="pill" data-filter="pending">Pending</button><button class="pill" data-filter="completed">Done</button></div>
+            <div class="toolbar-right"><select id="categoryFilter" aria-label="Filter category"><option value="">All categories</option><option>Personal</option><option>Work</option><option>Study</option><option>Shopping</option><option>Internship</option><option>Other</option></select><select id="sortSelect" aria-label="Sort tasks"><option value="newest">Newest</option><option value="oldest">Oldest</option><option value="dueDate">Due date</option><option value="priority">Priority</option><option value="alphabetical">A–Z</option></select></div>
+          </div>
+          <div class="task-list" id="taskList"><div class="loading-state">Gathering your little tasks... ✧</div></div>
+          <div class="list-footer"><span id="taskCountLabel">0 tasks</span><span>tiny steps count too <b>♡</b></span></div>
+        </div>
+
+        <aside class="right-column">
+          <section class="panel progress-panel">
+            <div class="mini-heading"><span>✿</span><h3>Task Progress</h3><b>♡</b></div>
+            <div class="progress-content"><div class="progress-ring" id="progressRing"><strong id="progressPercent">0%</strong></div><div><strong id="progressText">0 of 0 done</strong><p>You're blooming at your own pace.</p></div></div>
+            <div class="progress-track"><span id="progressBar"></span></div>
+          </section>
+          <section class="panel calendar-panel">
+            <div class="mini-heading"><span>✿</span><h3>My Calendar</h3><b>♡</b></div>
+            <div class="cal-banner"><span class="cal-pic" id="calPic" aria-hidden="true"></span><div><strong id="calCaption"></strong><small id="calSub"></small></div></div>
+            <div class="cal-nav"><button id="calPrev" aria-label="Previous month">‹</button><strong id="calMonth"></strong><button id="calNext" aria-label="Next month">›</button></div>
+            <div class="cal-grid cal-week" aria-hidden="true"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div>
+            <div class="cal-grid" id="calDays"></div>
+            <div class="cal-reminders" id="calReminders" hidden>
+              <div class="cal-rem-head">🔔 <strong id="calRemDate"></strong></div>
+              <ul class="cal-rem-list" id="calRemList"></ul>
+              <form class="rem-form" id="remForm">
+                <input id="remText" maxlength="80" autocomplete="off" placeholder="e.g. Sister's birthday 🎂" required aria-label="Reminder text">
+                <select id="remLead" aria-label="When to remind me"><option value="0">On the day</option><option value="1">1 day before</option><option value="3">3 days before</option><option value="7" selected>1 week before</option></select>
+                <button aria-label="Add reminder">＋</button>
+              </form>
+            </div>
+            <p class="cal-hint" id="calHint">✧ tap a date to add a reminder</p>
+            <div class="cal-legend"><span><i class="dot today"></i> today</span><span><i class="dot task"></i> has tasks</span><span><i class="dot late"></i> overdue</span><span>♡ reminder</span></div>
+          </section>
+          <section class="panel quick-panel">
+            <div class="mini-heading"><span>✎</span><h3>Quick Add</h3><b>♡</b></div>
+            <form id="quickForm" class="quick-form"><input id="quickTitle" maxlength="120" placeholder="A little thing to do..." aria-label="Quick task title" required /><button aria-label="Add quick task">↗</button></form>
+            <div class="quick-caption">write it down, let it out ✧</div>
+          </section>
+          <section class="reminder-card"><span class="reminder-tape"></span><div class="reminder-title">A little reminder ♡</div><div class="note-lines" id="reminderLines" contenteditable="true" spellcheck="false" title="Click to write your own reminder ✎"></div><small class="note-hint">✎ tap to write your own</small><span class="reminder-spark">✧　✿</span></section>
+        </aside>
+      </section>
+      <section class="extra-page panel" id="extraPage" hidden></section>
+      <footer class="page-footer">made with tiny dreams & lots of love <span>♡ ✧</span></footer>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="taskModal" aria-hidden="true">
+    <section class="task-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+      <div class="modal-decoration">✿　♡　✧</div>
+      <h2 id="modalTitle">Add a little task</h2><p class="modal-subtitle">Every big thing starts small.</p>
+      <form id="taskForm">
+        <input type="hidden" id="taskId" />
+        <label>Task title <input id="taskTitle" maxlength="120" required placeholder="What would you like to do?" /></label>
+        <label>Description <textarea id="taskDescription" maxlength="1000" rows="3" placeholder="Add a little more detail (optional)"></textarea></label>
+        <div class="form-row"><label>Category<select id="taskCategory"><option>Personal</option><option>Work</option><option>Study</option><option>Shopping</option><option>Internship</option><option>Other</option></select></label><label>Priority<select id="taskPriority"><option>Low</option><option selected>Medium</option><option>High</option></select></label></div>
+        <div class="form-row"><label>Due date<input id="taskDueDate" type="date" /></label><label class="important-check"><input id="taskImportant" type="checkbox" /> Mark important ☆</label></div>
+        <div class="modal-actions"><button type="button" class="secondary-btn" id="cancelModal">Maybe later</button><button type="submit" class="primary-btn">Save my task ♡</button></div>
+      </form>
+    </section>
+  </div>
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <script src="/js/stickers.js" defer></script>
+  <script src="/js/app.js" defer></script>
+</body>
+</html>

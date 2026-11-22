@@ -1,0 +1,255 @@
+/* TaskFlow — kawaii scrapbook design system */
+:root{--bg:#fff9fb;--surface:#fff;--ink:#583d50;--muted:#a17e92;--line:#f1dce6;--pink:#f5a6c4;--pink-dark:#cf6e98;--shadow:0 9px 25px rgba(177,111,145,.09);--radius:22px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Nunito",sans-serif;font-size:15px;background-image:radial-gradient(#f5dbe7 1px,transparent 1px);background-size:22px 22px}button,input,select,textarea{font:inherit}button{cursor:pointer;color:inherit}.app-shell{min-height:100vh;display:grid;grid-template-columns:260px minmax(0,1fr);max-width:1800px;margin:auto}.sidebar{background:#fff4f8;border-right:1px solid var(--line);padding:28px 18px 18px;display:flex;flex-direction:column;min-height:100vh;position:sticky;top:0;height:100vh;overflow:auto}.brand{text-decoration:none;color:var(--ink);text-align:center;display:flex;flex-direction:column;align-items:center;position:relative;margin-bottom:34px}.brand-bow{font-size:35px;color:#e58caf;line-height:1.1;transform:rotate(-12deg)}.brand-name{font-family:"Caveat",cursive;font-size:43px;font-weight:700;color:#a44e76}.brand-name span{color:#e88caf}.brand small{font-size:12px;color:#a57b91;letter-spacing:.5px}.nav-list{display:grid;gap:7px}.nav-item{border:0;background:transparent;text-align:left;padding:12px 14px;border-radius:14px;display:flex;align-items:center;gap:13px;font-weight:800;color:#7c5b70;transition:.2s}.nav-item span{width:23px;text-align:center;font-size:21px;color:#c77d9d}.nav-item:hover,.nav-item.active{background:#f9dce9;color:#9d4e75;transform:translateX(2px)}.sidebar-label{font-size:9px;letter-spacing:1.5px;color:#c08da5;margin:28px 12px 8px;font-weight:900}.sidebar-art{margin:auto 5px 16px;background:#ffebf2;border:1px dashed #eab6cb;border-radius:20px;text-align:center;padding:15px 8px;color:#c27c9b;position:relative}.flower{font-size:24px}.kitty{font-size:21px;color:#9e6d89}.sidebar-art p{font-family:"Caveat";font-size:20px;margin:5px}.sidebar-foot{text-align:center;font-size:11px;color:#b58a9f}.sidebar-foot span{color:#e58caf}.main-area{min-width:0;padding:0 34px 20px}.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid #f4e4eb}.search-box{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:30px;padding:9px 16px;width:min(480px,45%);color:#b77c99}.search-box span{font-size:25px}.search-box input{border:0;outline:0;width:100%;background:transparent;color:var(--ink)}.top-actions{display:flex;align-items:center;gap:13px}.sparkle{color:#d89bb5;font-size:23px}.icon-btn{border:0;background:none;font-size:23px;position:relative}.icon-btn i{position:absolute;width:7px;height:7px;background:#f08bac;border-radius:50%;top:3px;right:3px}.avatar{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#f4d5e3;color:#a24f78;font-weight:900;border:2px solid white;box-shadow:0 0 0 1px #e9bdcf}.profile-name{font-weight:800;font-size:13px}.primary-btn{border:0;background:linear-gradient(135deg,#f3a4c1,#e77fa7);color:white;border-radius:25px;padding:11px 18px;font-weight:900;box-shadow:0 5px 12px #eaa6c455;transition:.2s}.primary-btn:hover{transform:translateY(-2px);box-shadow:0 8px 17px #eaa6c477}.mobile-menu{display:none}.welcome-row{min-height:205px;display:flex;align-items:center;justify-content:space-between;gap:25px;padding:28px 8px 18px;position:relative;overflow:hidden}.eyebrow,.section-kicker{font-size:9px;letter-spacing:2px;font-weight:900;color:#c58ba4}.eyebrow span{color:#e6a0bc}.welcome-copy h1{font-family:"Caveat",cursive;font-size:55px;line-height:1;margin:10px 0;color:#9f4d75}.welcome-copy h1 span{color:#e98eb0}.welcome-copy p{font-size:16px;margin:8px 0 14px;color:#916e82}.tiny-tags{display:flex;gap:8px;flex-wrap:wrap}.tiny-tags span{font-size:10px;color:#a66f8a;background:#fff;border:1px dashed #edc6d7;border-radius:20px;padding:5px 9px}.plan-note{background:#fff8ec;border:1px solid #f1dfc2;border-radius:5px;padding:17px 20px 13px;transform:rotate(2deg);box-shadow:3px 5px 0 #f3e2d5;position:relative;min-width:210px;font-family:"Caveat",cursive;color:#775c58}.tape,.reminder-tape{position:absolute;top:-9px;left:40%;width:58px;height:17px;background:#e8dafa;opacity:.8;transform:rotate(-5deg);border:1px solid #d6c4eb}.note-title{font-size:22px;text-align:center;margin-bottom:8px}.plan-note p{margin:4px 0;font-size:16px}.note-doodle{position:absolute;right:10px;bottom:5px;color:#dc94ad;font-size:22px}.window-art{width:155px;height:130px;border:7px solid #fff;background:#e8eaff;border-radius:9px;position:relative;box-shadow:var(--shadow);overflow:hidden;flex-shrink:0}.window-sky{padding:14px;text-align:center;color:#a58fc2;font-size:20px}.curtain{position:absolute;left:0;right:0;bottom:0;height:45px;background:repeating-linear-gradient(90deg,#f6d4e2 0 12px,#fff0f5 12px 24px);opacity:.8;border-top:2px solid white}.plant{position:absolute;bottom:5px;left:60px;font-size:30px}.stats-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin:4px 0 22px}.stat-card{min-height:115px;border-radius:19px;padding:15px;display:grid;grid-template-columns:42px 1fr;align-items:center;column-gap:9px;position:relative;overflow:hidden;border:1px solid #fff;box-shadow:var(--shadow)}.stat-card.pink{background:#fce8f0}.stat-card.lilac{background:#eee8fb}.stat-card.mint{background:#e7f3e8}.stat-card.peach{background:#fff0e2}.stat-icon{width:39px;height:39px;border-radius:14px;background:#ffffff99;display:grid;place-items:center;font-size:23px;color:#bd6d92}.stat-card strong{display:block;font-family:"Poppins";font-size:27px;line-height:1.1}.stat-card div span{font-size:12px;font-weight:900}.stat-card small{grid-column:2;font-size:10px;color:#98798b}.corner-doodle{position:absolute;right:13px;top:10px;color:#d89ab5;font-size:17px}.content-grid{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(245px,.85fr);gap:18px;align-items:start}.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.tasks-panel{padding:19px 20px 12px;min-width:0}.panel-heading,.mini-heading{display:flex;align-items:center;justify-content:space-between}.panel-heading h2{font-family:"Caveat";font-size:34px;margin:1px 0;color:#995171}.panel-heading h2 span{color:#e68eae}.add-inline{border:1px dashed #e9abc4;background:#fff6fa;color:#b45f86;border-radius:18px;padding:8px 13px;font-size:12px;font-weight:900}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #f6e8ee}.filter-pills{display:flex;gap:5px}.pill{border:1px solid #f0dce6;background:#fff;border-radius:20px;padding:6px 12px;font-size:11px;color:#98758a}.pill.selected{background:#f6cbdc;color:#8e4569;border-color:#f6cbdc;font-weight:900}.toolbar-right{display:flex;gap:6px}.toolbar select{border:1px solid #f0dce6;background:#fff;border-radius:12px;padding:6px 8px;color:#896b7d;font-size:10px;max-width:115px}.task-list{min-height:180px}.task-row{display:grid;grid-template-columns:25px minmax(120px,1fr) auto auto 75px 28px 28px;gap:9px;align-items:center;padding:14px 3px;border-bottom:1px solid #f6e9ef;animation:fadeIn .25s ease}.task-row:last-child{border-bottom:0}.task-check{appearance:none;width:19px;height:19px;border:1.5px solid #d8a5ba;border-radius:6px;display:grid;place-items:center;margin:0;cursor:pointer}.task-check:checked{background:#e98fb1;border-color:#e98fb1}.task-check:checked:after{content:"✓";color:white;font-size:13px;font-weight:900}.task-main{min-width:0}.task-title{font-size:13px;font-weight:900;overflow-wrap:anywhere}.task-desc{font-size:10px;color:#aa8b9d;margin-top:3px;overflow-wrap:anywhere}.task-row.done .task-title{text-decoration:line-through;color:#bba9b4}.tag{border-radius:20px;padding:5px 9px;font-size:10px;font-weight:900;white-space:nowrap}.category-tag{background:#eee5fb;color:#8567a5}.priority-tag.high{background:#ffe0e6;color:#b65c79}.priority-tag.medium{background:#fff0d6;color:#a77a35}.priority-tag.low{background:#e4eefb;color:#6485b0}.priority-tag.completed{background:#e3f1e4;color:#638a69}.due-date{font-size:10px;color:#98788c;white-space:nowrap}.task-action{border:0;background:transparent;color:#b47c97;font-size:16px;padding:3px}.task-action.delete{color:#d57e91}.empty-state,.loading-state{text-align:center;padding:40px 12px;color:#a17f92}.empty-state .empty-art{font-size:36px;color:#e29ab6}.empty-state h3{font-family:"Caveat";font-size:25px;margin:5px}.list-footer{display:flex;justify-content:space-between;padding:10px 2px 0;font-size:10px;color:#ae8da0}.list-footer b{color:#df8eae}.right-column{display:grid;gap:14px}.progress-panel,.quick-panel{padding:17px}.mini-heading{justify-content:flex-start;gap:9px}.mini-heading>span{font-size:22px;color:#d58cab}.mini-heading h3{font-family:"Caveat";font-size:24px;margin:0;color:#995171}.mini-heading b{margin-left:auto;color:#e49bb7}.progress-content{display:flex;align-items:center;gap:13px;margin:18px 0 12px}.progress-ring{width:74px;height:74px;border-radius:50%;background:conic-gradient(#ed9fbd 0deg,#f8dce8 0deg);display:grid;place-items:center;position:relative;flex-shrink:0}.progress-ring:before{content:"";position:absolute;inset:8px;background:white;border-radius:50%}.progress-ring strong{z-index:1;font-size:17px}.progress-content>div+div strong{font-size:12px}.progress-content p{font-size:10px;color:#a88a9a;margin:4px 0}.progress-track{height:7px;border-radius:10px;background:#f8eaf0;overflow:hidden}.progress-track span{display:block;height:100%;width:0;background:linear-gradient(90deg,#f0b0c9,#c9b1e9);border-radius:10px;transition:width .3s}.quick-form{display:flex;border:1px solid #edd6e1;border-radius:13px;padding:4px;margin-top:15px}.quick-form input{min-width:0;flex:1;border:0;outline:0;padding:8px;background:transparent;color:var(--ink);font-size:12px}.quick-form button{border:0;border-radius:10px;background:#f2a4c0;color:white;font-size:20px;width:36px}.quick-caption{text-align:right;color:#b38ba0;font-family:"Caveat";font-size:16px;margin-top:6px}.reminder-card{position:relative;background:#fff3dc;border:1px solid #f2dfbb;padding:20px 18px 17px;transform:rotate(-1deg);box-shadow:3px 5px 0 #f5e6d4;color:#85674e;font-family:"Caveat";text-align:center}.reminder-title{font-size:24px}.reminder-card p{font-size:17px;margin:5px}.reminder-spark{color:#d89a72}.page-footer{text-align:center;padding:24px 0 8px;color:#b18da0;font-family:"Caveat";font-size:17px}.page-footer span{color:#dc91b0}.modal-backdrop{display:none;position:fixed;inset:0;background:#49334266;z-index:20;align-items:center;justify-content:center;padding:18px}.modal-backdrop.open{display:flex}.task-modal{background:#fffafd;border:1px solid #f0d6e2;border-radius:25px;width:min(520px,100%);padding:25px;position:relative;box-shadow:0 25px 70px #59364b33;max-height:95vh;overflow:auto}.modal-close{position:absolute;right:17px;top:13px;border:0;background:none;font-size:27px;color:#b77b97}.modal-decoration{text-align:center;color:#df9bb6;letter-spacing:8px}.task-modal h2{text-align:center;font-family:"Caveat";font-size:35px;color:#995171;margin:5px}.modal-subtitle{text-align:center;color:#ae8da0;font-size:12px;margin:0 0 20px}.task-modal form>label,.form-row label{display:flex;flex-direction:column;gap:6px;font-size:12px;font-weight:900;color:#89647a;margin-bottom:13px}.task-modal input:not([type=checkbox]),.task-modal textarea,.task-modal select{width:100%;border:1px solid #ecd6e1;border-radius:12px;padding:10px 12px;background:#fff;color:var(--ink);outline:none}.task-modal input:focus,.task-modal textarea:focus,.task-modal select:focus{border-color:#e9a1bd;box-shadow:0 0 0 3px #fbe7ef}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.important-check{display:flex!important;flex-direction:row!important;align-items:center;justify-content:center;padding-top:20px}.important-check input{accent-color:#e88eae}.modal-actions{display:flex;justify-content:flex-end;gap:9px;margin-top:20px}.secondary-btn{border:1px solid #ecd6e1;background:white;border-radius:22px;padding:10px 15px;color:#98788b;font-weight:800}.toast-region{position:fixed;right:20px;bottom:20px;z-index:40;display:grid;gap:8px}.toast{background:#fff;border:1px solid #f0d4e0;border-left:4px solid #e99db9;padding:12px 16px;border-radius:13px;box-shadow:var(--shadow);color:#825a70;animation:fadeIn .2s ease}.toast.error{border-left-color:#d87988}@keyframes fadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}body.dark{--bg:#241e29;--surface:#302735;--ink:#f5e8ef;--muted:#c5a9ba;--line:#493747;background-image:radial-gradient(#4d3948 1px,transparent 1px)}body.dark .sidebar{background:#302431;border-color:var(--line)}body.dark .topbar,body.dark .task-row{border-color:var(--line)}body.dark .search-box,body.dark .panel,body.dark .task-modal{background:#302735;border-color:var(--line)}body.dark .search-box input,body.dark .quick-form input{color:var(--ink)}body.dark .nav-item{color:#e6cddd}body.dark .nav-item.active{background:#533749}body.dark .task-title{color:#f5e8ef}body.dark .toolbar select,body.dark .pill,body.dark .quick-form{background:#3b3040;color:#ead9e3;border-color:#594354}body.dark .progress-ring:before{background:#302735}
+@media(max-width:1100px){.app-shell{grid-template-columns:220px minmax(0,1fr)}.sidebar{padding-inline:13px}.main-area{padding-inline:22px}.window-art{display:none}.stats-grid{gap:9px}.stat-card{padding:12px}.task-row{grid-template-columns:23px minmax(100px,1fr) auto auto 65px 24px 24px;gap:6px}}
+@media(max-width:820px){.app-shell{display:block}.sidebar{position:fixed;z-index:30;left:-280px;top:0;width:260px;transition:left .25s;box-shadow:var(--shadow)}.sidebar.open{left:0}.main-area{padding:0 18px}.mobile-menu{display:block;border:0;background:#fff0f6;border-radius:10px;padding:8px 11px;color:#a75a7d}.topbar{height:65px}.search-box{width:auto;flex:1}.top-actions{gap:8px}.profile-name,.sparkle{display:none}.welcome-row{min-height:175px}.plan-note{min-width:180px}.content-grid{grid-template-columns:1fr}.right-column{grid-template-columns:1fr 1fr}.reminder-card{grid-column:1/-1}.stats-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.main-area{padding:0 12px}.topbar{gap:9px}.top-actions .avatar,.icon-btn{display:none}.top-actions .primary-btn{padding:9px 12px;font-size:11px}.search-box{padding:8px 10px}.search-box input{font-size:11px}.welcome-row{padding:25px 3px 18px}.welcome-copy h1{font-size:43px}.welcome-copy p{font-size:13px}.plan-note{display:none}.stats-grid{gap:8px}.stat-card{min-height:100px;padding:10px;grid-template-columns:34px 1fr}.stat-icon{width:32px;height:32px}.stat-card strong{font-size:23px}.stat-card div span{font-size:11px}.stat-card small{font-size:9px}.tasks-panel{padding:15px 11px}.panel-heading h2{font-size:30px}.toolbar{align-items:flex-start;flex-direction:column}.toolbar-right{width:100%}.toolbar select{flex:1;max-width:none}.task-row{grid-template-columns:22px minmax(0,1fr) 25px 25px;gap:7px;padding:12px 0}.task-row .tag,.task-row .due-date{grid-column:2;justify-self:start}.task-row .category-tag{grid-row:2}.task-row .priority-tag{grid-row:2;grid-column:2;justify-self:end}.task-row .due-date{grid-row:3}.task-row .task-action.edit{grid-column:3;grid-row:1}.task-row .task-action.delete{grid-column:4;grid-row:1}.task-main{grid-column:2;grid-row:1}.task-check{grid-column:1;grid-row:1}.right-column{grid-template-columns:1fr}.reminder-card{grid-column:auto}.form-row{grid-template-columns:1fr}.important-check{justify-content:flex-start;padding-top:0!important}.modal-actions{flex-direction:column-reverse}.modal-actions button{width:100%}}
+
+.group-title{font-family:"Caveat",cursive;font-size:24px;color:#995171;margin:16px 2px 2px}.group-title small{font-family:"Nunito";font-size:11px;color:#b38ba0;margin-left:6px}
+.due-date.overdue{color:#c4506f;font-weight:900}
+.task-check:focus-visible,.nav-item:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid #e77fa7;outline-offset:2px}
+body.dark .stat-card.pink{background:#4a3043}body.dark .stat-card.lilac{background:#3d3550}body.dark .stat-card.mint{background:#2f4339}body.dark .stat-card.peach{background:#4d3b34}
+body.dark .stat-card small,body.dark .stat-card div span{color:#e9d3df}body.dark .stat-icon{background:#ffffff1f;color:#f2a9c6}
+body.dark .plan-note{background:#3f3340;border-color:#594354;color:#f1dde6;box-shadow:3px 5px 0 #2a2030}
+body.dark .reminder-card{background:#443a38;border-color:#5d4e45;color:#f1dfcf;box-shadow:3px 5px 0 #2a2030}
+body.dark .sidebar-art{background:#3a2c3a;border-color:#6b4b62}body.dark .kitty{color:#e6cddd}
+body.dark .welcome-copy h1,body.dark .panel-heading h2,body.dark .mini-heading h3,body.dark .task-modal h2,body.dark .group-title,body.dark .brand-name{color:#f3a9c8}
+body.dark .welcome-copy p,body.dark .task-desc,body.dark .due-date,body.dark .progress-content p,body.dark .modal-subtitle,body.dark .list-footer{color:#cfb2c3}
+body.dark .tiny-tags span,body.dark .add-inline,body.dark .secondary-btn{background:#3b3040;color:#ead9e3;border-color:#594354}
+body.dark .task-modal{background:#2b2230}body.dark .task-modal input:not([type=checkbox]),body.dark .task-modal textarea,body.dark .task-modal select{background:#3b3040;color:#f5e8ef;border-color:#594354}
+body.dark .task-modal form>label,body.dark .form-row label{color:#ead9e3}body.dark .toast{background:#3b3040;color:#f5e8ef;border-color:#594354}
+body.dark .category-tag{background:#453a5c;color:#d9c8f3}body.dark .mobile-menu{background:#3b3040;color:#f3a9c8}
+body.dark .progress-track{background:#443547}body.dark .page-footer,body.dark .quick-caption{color:#cfb2c3}body.dark .task-row.done .task-title{color:#8e7a88}
+body.dark .window-art{border-color:#302735;background:#3a3860}
+
+.task-main{cursor:pointer}.task-main:hover .task-title{color:#c45c88}
+.note-lines{outline:0;border-radius:8px;padding:2px 4px;min-height:40px;cursor:text;transition:background .2s}
+.note-lines:hover{background:#ffffff66}.note-lines:focus{background:#ffffffaa;box-shadow:0 0 0 2px #f2c3d6 inset}
+.note-lines p{margin:4px 0}
+.note-hint{display:block;font-family:"Nunito",sans-serif;font-size:9px;letter-spacing:.5px;opacity:.55;margin-top:4px}
+.calendar-panel{padding:16px 15px 12px}
+.cal-nav{display:flex;align-items:center;justify-content:space-between;margin:12px 0 8px}
+.cal-nav strong{font-family:"Caveat",cursive;font-size:22px;color:#995171;font-weight:700}
+.cal-nav button{border:0;background:#fdeaf2;color:#b45f86;width:28px;height:28px;border-radius:50%;font-size:18px;line-height:1;transition:.2s}
+.cal-nav button:hover{background:#f7cfe0;transform:scale(1.08)}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;text-align:center}
+.cal-week span{font-size:10px;font-weight:900;color:#c08da5;padding:3px 0}
+.cal-empty{display:block}
+.cal-day{border:0;background:transparent;border-radius:50%;aspect-ratio:1;font-size:12px;font-weight:700;color:#7c5b70;position:relative;display:grid;place-items:center;padding:0;transition:.15s}
+.cal-day:hover{background:#fdeaf2}
+.cal-day.today{background:linear-gradient(135deg,#f3a4c1,#e77fa7);color:#fff;box-shadow:0 3px 8px #eaa6c477}
+.cal-day.selected{box-shadow:0 0 0 2px #c9b1e9}
+.cal-day i{position:absolute;bottom:3px;left:50%;width:5px;height:5px;margin-left:-2.5px;border-radius:50%;background:#b79be0}
+.cal-day.late i{background:#e5617f}.cal-day.today i{background:#fff}
+.cal-legend{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:8px;font-size:10px;color:#a88a9a}
+.cal-legend .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:3px;vertical-align:middle}
+.dot.today{background:#e77fa7}.dot.task{background:#b79be0}.dot.late{background:#e5617f}
+body.dark .cal-day{color:#ead9e3}body.dark .cal-day:hover{background:#443547}body.dark .cal-nav button{background:#443547;color:#f3a9c8}
+body.dark .cal-nav strong{color:#f3a9c8}body.dark .cal-legend{color:#cfb2c3}
+body.dark .note-lines:hover{background:#ffffff14}body.dark .note-lines:focus{background:#ffffff1f;box-shadow:0 0 0 2px #7a5470 inset}
+body.dark .task-main:hover .task-title{color:#f3a9c8}
+
+/* motivation bar */
+.motivation-bar{display:inline-flex;align-items:center;gap:10px;max-width:100%;margin:8px 0 14px;padding:9px 12px 9px 14px;background:#fff3c4;border:1px solid #f0dca0;border-radius:6px;box-shadow:2px 3px 0 #f3e6bd;transform:rotate(-.6deg);color:#7a6140;font-size:15px;font-weight:700}
+.mot-icon{color:#e0b04c}.mot-text.pop{animation:fadeIn .4s ease}
+.motivation-bar button{border:0;background:#ffe596;color:#9a7421;width:26px;height:26px;border-radius:50%;font-size:15px;line-height:1;flex-shrink:0;transition:.25s}
+.motivation-bar button:hover{transform:rotate(180deg) scale(1.1)}
+body.dark .motivation-bar{background:#4a4130;border-color:#6a5a38;box-shadow:2px 3px 0 #2a2030;color:#f3e3bd}body.dark .motivation-bar button{background:#6a5a38;color:#ffe596}
+/* monthly calendar theme */
+.calendar-panel{--cal-accent:#f5a6c4;--cal-dark:#cf6e98;--cal-soft:#fde8f1;background:linear-gradient(180deg,var(--cal-soft),#fff 60%);border-color:var(--cal-accent);transition:background .4s,border-color .4s}
+.cal-banner{display:flex;align-items:center;gap:12px;margin:10px 0 2px;padding:8px 14px;background:#ffffffaa;border:1.5px dashed var(--cal-accent);border-radius:18px}
+.cal-pic{font-size:40px;line-height:1;filter:drop-shadow(0 3px 3px #00000014);animation:floaty 3.2s ease-in-out infinite}
+.cal-banner strong{display:block;font-family:"Caveat",cursive;font-size:23px;line-height:1.1;color:var(--cal-dark)}
+.cal-banner small{font-size:10px;letter-spacing:1.5px;font-weight:900;color:var(--cal-accent)}
+.calendar-panel .mini-heading h3,.calendar-panel .mini-heading>span,.calendar-panel .mini-heading b{color:var(--cal-dark)}
+.cal-nav strong{color:var(--cal-dark)}.cal-nav button{background:var(--cal-soft);color:var(--cal-dark)}.cal-nav button:hover{background:var(--cal-accent);color:#fff}
+.cal-week span{color:var(--cal-accent)}
+.cal-day{color:#6e5566}.cal-day:hover{background:var(--cal-soft)}
+.cal-day.today{background:var(--cal-accent);box-shadow:0 3px 9px color-mix(in srgb,var(--cal-accent) 55%,transparent);color:#fff}
+.cal-day.selected{box-shadow:0 0 0 2px var(--cal-dark)}
+.cal-day i,.dot.task{background:var(--cal-dark)}.cal-day.late i{background:#e5617f}.cal-day.today i{background:#fff}.dot.today{background:var(--cal-accent)}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-5px) rotate(4deg)}}
+@media(prefers-reduced-motion:reduce){.cal-pic{animation:none}.motivation-bar button:hover{transform:none}}
+body.dark .calendar-panel{background:linear-gradient(180deg,color-mix(in srgb,var(--cal-accent) 18%,#302735),#302735 65%)}
+body.dark .cal-banner{background:#ffffff10}body.dark .cal-day{color:#ead9e3}body.dark .cal-day:hover{background:#ffffff1a}
+body.dark .cal-nav button{background:#ffffff14}body.dark .cal-banner strong{color:var(--cal-accent)}
+@media(max-width:560px){.motivation-bar{font-size:13px}}
+
+[hidden]{display:none!important}
+/* plan checklist */
+.plan-note{min-width:240px;max-width:290px}
+.plan-note .note-title{outline:0;border-radius:8px;cursor:text;padding:0 6px}.plan-note .note-title:hover,.plan-note .note-title:focus{background:#ffffffaa}
+.plan-list{list-style:none;margin:2px 0 0;padding:0}
+.plan-item{display:flex;align-items:center;gap:8px;font-size:18px;line-height:1.15;padding:2px 0}
+.plan-item input[type=checkbox]{width:16px;height:16px;accent-color:#e77fa7;flex-shrink:0;cursor:pointer;margin:0}
+.plan-text{flex:1;min-width:0;outline:0;border-radius:6px;padding:1px 4px;cursor:text;overflow-wrap:anywhere}
+.plan-text:hover{background:#ffffff77}.plan-text:focus{background:#ffffffcc;box-shadow:0 0 0 2px #f2c3d6 inset}
+.plan-item.done .plan-text{text-decoration:line-through;opacity:.55}
+.plan-del{border:0;background:transparent;color:#c99;font-size:18px;line-height:1;opacity:.35;padding:0 2px;transition:.2s}
+.plan-item:hover .plan-del,.plan-del:focus{opacity:1;color:#d1607f}
+.plan-add input{width:100%;border:0;border-bottom:1.5px dashed #e4cfa6;background:transparent;font-family:"Caveat",cursive;font-size:17px;color:#775c58;padding:3px 4px;margin-top:6px;outline:0}
+.plan-add input::placeholder{color:#b99f84}.plan-add input:focus{border-bottom-color:#e77fa7}
+.plan-clear{border:0;background:transparent;font-family:"Caveat",cursive;font-size:15px;color:#b08a6a;padding:2px 4px;margin-top:2px;cursor:pointer}.plan-clear:hover{color:#d1607f}
+/* reminder banner */
+.reminder-banner{display:flex;gap:12px;align-items:flex-start;margin:2px 0 16px;padding:12px 16px;background:#fff6dc;border:1.5px dashed #efcf84;border-radius:18px;box-shadow:var(--shadow);animation:fadeIn .4s ease}
+.rem-bell{font-size:24px;animation:wiggle 2.4s ease-in-out infinite;transform-origin:50% 10%}
+.rem-items{flex:1;display:grid;gap:6px;min-width:0}
+.rem-item{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#7a6140;font-size:14px}
+.rem-item small{opacity:.7}.rem-item.soon strong{color:#c4506f}
+.rem-item button{border:0;background:#ffe596;color:#9a7421;width:26px;height:26px;border-radius:50%;flex-shrink:0;font-weight:900}
+.rem-item button:hover{background:#f6cf6b}
+@keyframes wiggle{0%,86%,100%{transform:rotate(0)}90%{transform:rotate(14deg)}94%{transform:rotate(-12deg)}98%{transform:rotate(8deg)}}
+@media(prefers-reduced-motion:reduce){.rem-bell{animation:none}}
+/* calendar reminders */
+.cal-day.has-reminder:after{content:"♡";position:absolute;top:0;right:1px;font-size:9px;color:var(--cal-dark)}
+.cal-reminders{margin-top:10px;padding:10px 12px;background:#ffffffb8;border:1.5px dashed var(--cal-accent);border-radius:16px}
+.cal-rem-head{font-size:13px;color:var(--cal-dark)}
+.cal-rem-list{list-style:none;margin:6px 0;padding:0;display:grid;gap:4px}
+.cal-rem-list li{display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:12px;color:#6e5566;background:var(--cal-soft);border-radius:10px;padding:5px 8px}
+.cal-rem-list small{opacity:.65}.cal-rem-empty{justify-content:center!important;background:transparent!important;opacity:.6}
+.cal-rem-list button{border:0;background:transparent;color:#d1607f;font-size:16px;line-height:1}
+.rem-form{display:flex;gap:6px;flex-wrap:wrap}
+.rem-form input{flex:1 1 100%;min-width:0;border:1px solid var(--cal-accent);border-radius:12px;padding:7px 10px;font-size:12px;background:#fff;color:var(--ink);outline:0}
+.rem-form select{flex:1;min-width:0;border:1px solid var(--cal-accent);border-radius:12px;padding:6px 8px;font-size:11px;background:#fff;color:var(--ink)}
+.rem-form button{border:0;background:var(--cal-accent);color:#fff;border-radius:12px;width:38px;font-size:18px;font-weight:900}
+.cal-hint{text-align:center;font-size:10px;color:var(--cal-dark);opacity:.75;margin:8px 0 0}
+body.dark .plan-note .note-title:hover,body.dark .plan-note .note-title:focus,body.dark .plan-text:hover{background:#ffffff14}body.dark .plan-text:focus{background:#ffffff1f;box-shadow:0 0 0 2px #7a5470 inset}
+body.dark .plan-add input{color:#f1dde6;border-bottom-color:#6a5a48}body.dark .plan-clear{color:#cfb2a0}
+body.dark .reminder-banner{background:#4a4130;border-color:#6a5a38}body.dark .rem-item{color:#f3e3bd}body.dark .rem-item button{background:#6a5a38;color:#ffe596}
+body.dark .cal-reminders{background:#ffffff10}body.dark .cal-rem-list li{background:#ffffff14;color:#ead9e3}
+body.dark .rem-form input,body.dark .rem-form select{background:#3b3040;color:#f5e8ef}
+/* plan note on small screens (was hidden before) */
+@media(max-width:820px){.plan-note{min-width:210px}}
+@media(max-width:560px){.welcome-row{flex-direction:column;align-items:stretch;min-height:auto;overflow:visible}.plan-note{display:block!important;max-width:none;min-width:0;transform:none;margin-top:8px}}
+
+@media(max-width:1500px){.window-art{display:none}}
+.welcome-copy h1{font-size:clamp(38px,4vw,55px)}
+
+
+/* Expanded personal spaces */
+[hidden]{display:none!important}
+.brand-bow{font-family:"Nunito",sans-serif;font-size:17px;letter-spacing:3px;background:#fbe4ed;border:1px solid #f0c8d8;border-radius:50px;padding:9px 16px;margin-bottom:9px;transform:none;box-shadow:0 5px 14px #dba5bd30}
+.extra-page{margin:24px 0 30px;padding:clamp(18px,3vw,34px);min-height:65vh;background:linear-gradient(145deg,#fff 0%,#fff8fb 100%);border:1px solid #f0dce6;border-radius:26px;box-shadow:var(--shadow)}
+.extra-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;padding-bottom:18px;border-bottom:1px dashed #eac6d7}
+.extra-heading h2{font-family:"Caveat",cursive;font-size:clamp(36px,5vw,52px);color:#a44e76;margin:5px 0}
+.extra-heading h2 span{color:#e88caf}.extra-heading p{color:#987b8c;margin:0}.extra-spark{font-size:28px;color:#d58eae}
+.full-calendar{max-width:900px;margin:auto;background:#fff;border:1px solid #f0dce6;border-radius:22px;padding:20px;box-shadow:var(--shadow)}
+.full-cal-title{text-align:center;font-family:"Caveat";font-size:32px;color:#a44e76;margin-bottom:18px}
+.full-cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.full-cal-week span{text-align:center;color:#b47d98;font-size:12px;font-weight:900;padding:8px}
+.full-cal-day{min-height:78px;border:1px solid #f3e2ea;background:#fffafd;border-radius:13px;text-align:left;padding:9px;color:#65495a;display:flex;flex-direction:column;gap:8px}
+.full-cal-day:hover{background:#fceaf1;border-color:#e8b5cb}.full-cal-day.is-today{background:#f9dce9;border:2px solid #d889aa}.full-cal-day small{font-size:10px;color:#b26b8c}.full-cal-day.has-plan{background:#fff5f8}.full-cal-blank{min-height:65px}
+.memory-hint{text-align:center;color:#a17e92;margin:18px}
+.diary-form,.sticker-create{background:#fff7fa;border:1px dashed #e8b8cc;border-radius:20px;padding:20px;display:grid;gap:14px;margin-bottom:22px}
+.diary-form label,.sticker-create label{display:grid;gap:7px;font-weight:800;color:#815b70}
+.diary-form input,.diary-form textarea,.sticker-create input{border:1px solid #efd5e1;border-radius:12px;padding:12px;background:#fff;color:#583d50;outline-color:#e5a7c1}
+.diary-actions{display:flex;align-items:center;justify-content:space-between;gap:12px}.diary-actions span,.diary-form small{font-size:12px;color:#a17e92}
+.diary-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.diary-entry{background:#fff;border:1px solid #f0dce6;border-radius:18px;padding:16px;box-shadow:var(--shadow)}
+.diary-entry small{color:#bd85a0}.diary-entry h3{margin:5px 0;color:#a44e76}.diary-entry p{white-space:normal;line-height:1.6;color:#705568}.entry-actions{display:flex;gap:8px}.entry-actions button,.memory-card button{border:0;background:#f9e4ed;color:#9e5476;border-radius:9px;padding:6px 10px;font-size:12px}
+.empty-soft{color:#ad8a9d;text-align:center;padding:30px}
+.sticker-create{grid-template-columns:1fr 1fr auto;align-items:end}
+.sticker-upload{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:15px 0 28px}
+.upload-label{background:#f9dfeb;border:1px dashed #d994b2;border-radius:14px;padding:11px 16px;color:#98516f;font-weight:900;cursor:pointer}
+.sticker-upload small{color:#a17e92}.subsection-title{font-family:"Caveat";font-size:28px;color:#a44e76}
+.sticker-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(125px,1fr));gap:13px}
+.sticker-tile{position:relative;min-height:135px;background:#fff8fb;border:1px solid #f0dce6;border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:12px}
+.sticker-tile span{font-size:36px;color:#c67899}.sticker-tile img{width:75px;height:75px;object-fit:contain}.sticker-tile small{font-size:11px;color:#a17e92}.sticker-tile button{position:absolute;right:7px;top:5px;border:0;background:#f8e1eb;border-radius:50%;width:23px;height:23px;color:#a44e76}
+.memory-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px;margin-top:22px}
+.memory-card{background:#fff;border:1px solid #f0dce6;padding:10px;border-radius:17px;box-shadow:var(--shadow)}
+.memory-card img{width:100%;height:190px;object-fit:cover;border-radius:12px}.memory-card p{color:#805c70;min-height:24px}
+@media(max-width:700px){.extra-page{padding:16px;margin:14px 0}.sticker-create{grid-template-columns:1fr}.full-cal-grid{gap:3px}.full-cal-day{min-height:55px;padding:5px 3px;font-size:12px}.full-cal-day small{font-size:8px}.diary-actions{align-items:flex-start;flex-direction:column}}
+
+/* Final requested additions: preserve the original TaskFlow layout and add gentle details. */
+.brand-ribbon{display:block;width:58px;height:34px;position:relative;margin:0 auto 8px!important;font-size:0!important}
+.brand-ribbon:before,.brand-ribbon:after{content:"";position:absolute;top:5px;width:25px;height:19px;background:linear-gradient(145deg,#ffdce8,#efa9c2);border:2px solid #c87998;border-radius:85% 15% 75% 25%;box-shadow:inset 0 0 0 3px #ffeef4}
+.brand-ribbon:before{left:3px;transform:rotate(25deg)}.brand-ribbon:after{right:3px;transform:scaleX(-1) rotate(25deg)}
+.brand-ribbon span{position:absolute;z-index:2;left:24px;top:10px;width:12px;height:12px;background:#f7bfd2;border:2px solid #c87998;border-radius:45%}
+.brand-ribbon i,.brand-ribbon b{position:absolute;top:19px;width:10px;height:15px;background:#f4bfd1;border:1px solid #c87998;clip-path:polygon(0 0,100% 0,80% 100%,50% 78%,20% 100%)}.brand-ribbon i{left:20px;transform:rotate(12deg)}.brand-ribbon b{left:31px;transform:rotate(-12deg)}
+.calendar-view-controls{display:flex;gap:9px;justify-content:center;margin:8px 0 22px}.calendar-view-controls button,.sticker-tags button{border:1px solid #efd4e0;background:#fff8fb;color:#925b74;padding:10px 16px;border-radius:999px;font-weight:800;cursor:pointer}.calendar-view-controls button.active,.sticker-tags button.active{background:#edbfd0;border-color:#d994b0;color:#713e56;box-shadow:0 4px 12px #d994b033}
+.all-months-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.month-theme-card{--cal-accent:#e6a9c0;--cal-dark:#925b74;--cal-soft:#fff0f5;background:linear-gradient(150deg,#fff,var(--cal-soft));border:1px solid color-mix(in srgb,var(--cal-accent),white 45%);border-radius:17px;padding:12px;box-shadow:0 5px 16px #8b587012;overflow:hidden}.month-theme-card header{display:flex;align-items:center;gap:8px;background:color-mix(in srgb,var(--cal-soft),white 20%);border-radius:12px;padding:8px;margin-bottom:10px;color:var(--cal-dark)}.month-theme-card header h3{margin:0;font-family:'Caveat',cursive;font-size:21px}.month-theme-card header small{font-size:10px;color:var(--cal-dark)}.season-doodle{font-size:25px;color:var(--cal-accent);display:inline-block;animation:gentleFloat 4s ease-in-out infinite}.mini-heart{margin-left:auto;color:var(--cal-accent)}
+.full-cal-toolbar{display:flex;align-items:center;justify-content:space-between;text-align:center;color:var(--cal-dark)}.full-cal-toolbar>button{border:0;border-radius:50%;width:38px;height:38px;background:var(--cal-soft);color:var(--cal-dark);font-size:25px;cursor:pointer}.full-cal-toolbar small{color:var(--cal-dark)}.seasonal-doodles{text-align:center;color:var(--cal-accent);font-size:21px;letter-spacing:14px;padding:8px;animation:gentleFloat 5s ease-in-out infinite}.full-calendar .full-cal-day,.month-theme-card .full-cal-day{border-color:color-mix(in srgb,var(--cal-accent),white 65%);background:#fff;color:#76576a}.full-calendar .full-cal-day.is-today,.month-theme-card .full-cal-day.is-today{background:var(--cal-soft);border:2px solid var(--cal-accent)}.full-calendar .full-cal-day.is-selected,.month-theme-card .full-cal-day.is-selected{background:var(--cal-accent);color:white;box-shadow:0 0 0 3px var(--cal-soft)}.full-calendar .full-cal-day:hover,.month-theme-card .full-cal-day:hover{background:var(--cal-soft);border-color:var(--cal-accent);transform:translateY(-2px)}.month-theme-card .full-cal-grid{gap:3px}.month-theme-card .full-cal-day{min-height:43px;padding:4px 2px;font-size:11px}.month-theme-card .full-cal-day small{font-size:8px}.selected-date-panel{max-width:900px;margin:18px auto 0;padding:18px 20px;background:#fff8fb;border:1px solid #efd7e2;border-radius:18px}.selected-date-panel h3{font-family:'Caveat',cursive;color:#a45d7b;font-size:24px;margin:0 0 10px}.selected-date-panel>p{color:#987d8c}.calendar-task-line{display:flex;gap:10px;align-items:center;padding:9px;border-bottom:1px solid #f3e3ea}.calendar-task-line span{color:#bd7895}.calendar-task-line small{margin-left:auto;color:#a17e92}.selected-date-panel .primary-btn{margin-top:12px}
+.diary-quote,.sticker-intro-note,.memory-welcome{padding:15px 18px;margin-bottom:17px;border-radius:15px;background:linear-gradient(100deg,#fff0f5,#fff9e9);color:#9d607b;border:1px dashed #e7bdce;text-align:center;font-family:'Caveat',cursive;font-size:23px}.diary-form input[type=date],.diary-form input,.diary-form textarea{max-width:100%}.memory-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}.memory-card-copy{padding:10px 3px}.memory-card-copy h3{margin:2px 0 4px;color:#a45d7b;font-family:'Caveat',cursive;font-size:23px}.memory-card-copy small{color:#b17d94}.memory-card-copy p{margin:8px 0;color:#705568;line-height:1.5}.sticker-upload{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:14px 0 20px;padding:15px;background:#fff9fb;border:1px dashed #e8bfd0;border-radius:16px}.sticker-upload small{width:100%;color:#a17e92}.upload-name{display:grid;gap:5px;color:#815b70;font-weight:700}.upload-name input{border:1px solid #efd5e1;border-radius:10px;padding:10px}.sticker-tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.sticker-tags button{padding:7px 13px;font-size:12px}.sticker-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:12px}.sticker-tile{cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s}.sticker-tile svg{width:76px;height:76px;filter:drop-shadow(0 3px 2px #a36c8020)}.sticker-tile .text-sticker-art{font-family:'Caveat',cursive;font-size:24px;color:#b76f8d;text-align:center;overflow-wrap:anywhere}.sticker-tile:hover{transform:translateY(-4px) rotate(-1deg);border-color:#d995b1;box-shadow:0 8px 18px #b9789320}.sticker-tile.chosen{border:2px solid #d58eaa;background:#fff0f5;box-shadow:0 0 0 3px #f8dce7}.sticker-remove{position:absolute;right:7px;top:5px;border:0;background:#f8e1eb;border-radius:50%;width:23px;height:23px;color:#a44e76;font-style:normal;display:grid;place-items:center}.sticker-selected{text-align:center;color:#a66c85;margin-top:14px;font-family:'Caveat',cursive;font-size:21px}
+@keyframes gentleFloat{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-4px) rotate(2deg)}}
+@media(max-width:900px){.all-months-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.all-months-grid{grid-template-columns:1fr}.calendar-view-controls button{padding:9px 12px;font-size:12px}.month-theme-card .full-cal-day{min-height:48px}.sticker-upload{align-items:flex-start;flex-direction:column}}
+.month-theme-card{cursor:pointer}.month-theme-card:focus-visible{outline:3px solid var(--cal-accent);outline-offset:3px}
+
+/* ===== New logo ===== */
+.brand-logo{display:block;width:92px;margin:0 auto 2px}
+.brand-logo svg{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(0 6px 8px #d98fae30)}
+.brand:hover .brand-logo svg{animation:logoWiggle .8s ease}
+.brand-logo .twinkle{transform-origin:18px 22px;animation:twinkle 2.6s ease-in-out infinite}
+@keyframes logoWiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-5deg)}60%{transform:rotate(4deg)}}
+@keyframes twinkle{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(.7);opacity:.7}}
+@media(prefers-reduced-motion:reduce){.brand-logo .twinkle,.brand:hover .brand-logo svg{animation:none}}
+
+/* ===== My Calendar page now matches the dashboard calendar ===== */
+.full-calendar{background:linear-gradient(180deg,var(--cal-soft),#fff 55%);border:1.5px solid var(--cal-accent);transition:background .4s,border-color .4s}
+.full-calendar .cal-banner.full-banner{justify-content:center;gap:16px;margin:12px 0 14px;padding:10px 18px}
+.full-banner .cal-pic{font-size:54px}.full-banner strong{font-size:30px!important}
+.banner-doodles{display:flex;gap:8px;color:var(--cal-accent);font-size:18px}.banner-doodles i{font-style:normal;animation:floaty 3.4s ease-in-out infinite}.banner-doodles i:nth-child(2){animation-delay:.5s}.banner-doodles i:nth-child(3){animation-delay:1s}
+.cal-pic.small{font-size:30px;line-height:1}
+.full-calendar .full-cal-title{color:var(--cal-dark);margin-bottom:4px}
+.full-calendar .full-cal-week span{color:var(--cal-accent)}
+.full-calendar .full-cal-day.is-today,.month-theme-card .full-cal-day.is-today{background:var(--cal-accent);border-color:var(--cal-accent);color:#fff}
+.full-calendar .full-cal-day.is-today small,.month-theme-card .full-cal-day.is-today small{color:#fff}
+.full-calendar .full-cal-day.is-selected,.month-theme-card .full-cal-day.is-selected{box-shadow:0 0 0 2px var(--cal-dark)}
+.full-cal-day{position:relative}.full-cal-day.has-plan small{color:var(--cal-dark)}
+.full-cal-day.has-reminder:after{content:"♡";position:absolute;top:4px;right:6px;font-size:12px;color:var(--cal-dark)}
+.full-cal-day.is-today.has-reminder:after{color:#fff}
+.selected-date-panel{background:linear-gradient(180deg,#fff8fb,#fff);border-color:#f2d3e1}
+.selected-reminders{margin:12px 0 4px;padding:12px;background:#fffaf0;border:1px dashed #efd48a;border-radius:14px}
+.selected-reminders h4{margin:0 0 6px;color:#9a7421}.selected-reminders .calendar-task-line{border-bottom-color:#f4e6c4}
+.selected-reminders p{color:#a88c5a;margin:6px 0;font-size:13px}.rem-x{margin-left:auto;border:0;background:transparent;color:#d1607f;font-size:18px}
+.selected-reminders .rem-form{margin-top:10px}
+
+/* ===== Rotating cute messages ===== */
+.motto{min-height:64px;display:flex;align-items:center;justify-content:center;transition:opacity .35s ease,transform .35s ease}
+.motto.swap{opacity:0;transform:translateY(5px)}
+
+/* ===== Kawaii collection ===== */
+.sticker-create{grid-template-columns:1fr 1fr;align-items:end}
+.sticker-create .swatch-row,.sticker-create .primary-btn{grid-column:1/-1}.sticker-create .primary-btn{justify-self:start}
+.swatch-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.swatch-row:before{content:"Sticker color:";font-size:13px;font-weight:800;color:#815b70;margin-right:4px}
+.swatch{display:block;margin:0;cursor:pointer}.swatch input{position:absolute;opacity:0;pointer-events:none}
+.swatch span{display:block;width:28px;height:28px;border-radius:50%;background:var(--sw);border:2px solid #fff;box-shadow:0 0 0 1.5px #d9b3c5;transition:.2s}
+.swatch input:checked+span{box-shadow:0 0 0 3px #e77fa7;transform:scale(1.1)}.swatch input:focus-visible+span{outline:2px solid #e77fa7;outline-offset:3px}
+.sticker-cell{position:relative}
+.sticker-tile{width:100%;min-height:140px;padding:12px 8px 10px;transition:transform .2s,box-shadow .2s,border-color .2s,background .2s}
+.sticker-tile:hover{transform:translateY(-3px);box-shadow:0 10px 22px #d98fae26;border-color:#efb7cd}
+.sticker-tile .tile-art{display:grid;place-items:center;width:84px;height:84px;font-size:0}
+.sticker-tile .tile-art svg{width:84px;height:84px;overflow:visible}.sticker-tile .tile-art img{width:84px;height:84px;object-fit:contain}
+.sticker-tile small{text-align:center}
+.sticker-tile .tile-check{display:none;position:absolute;top:7px;left:7px;width:24px;height:24px;border-radius:50%;background:#e77fa7;color:#fff;font-size:13px;font-weight:900;place-items:center;box-shadow:0 3px 8px #e77fa755}
+.sticker-tile.chosen{background:#fff0f6;border-color:#e77fa7;box-shadow:0 0 0 3px #f9c9dc,0 12px 24px #e77fa733;transform:translateY(-3px)}
+.sticker-tile.chosen .tile-check{display:grid}
+.sticker-remove{position:absolute;right:6px;top:6px;border:0;background:#f8e1eb;border-radius:50%;width:24px;height:24px;color:#a44e76;font-size:15px;line-height:1;z-index:2}.sticker-remove:hover{background:#f3bfd3}
+.sticker-preview{position:sticky;top:8px;z-index:6;display:flex;gap:18px;align-items:center;background:#fff;border:2px solid #f2b3cc;border-radius:22px;padding:14px 18px;margin:14px 0 18px;box-shadow:0 12px 28px #d98fae33;animation:fadeIn .3s ease}
+.sticker-preview[hidden]{display:none}
+.sticker-preview-art{width:116px;height:116px;flex-shrink:0;display:grid;place-items:center;border-radius:18px;background:repeating-conic-gradient(#fdf1f6 0 25%,#fff 0 50%) 0 0/16px 16px;border:1px solid #f4d9e5}
+.sticker-preview-art svg,.sticker-preview-art img{width:100px;height:100px;object-fit:contain;overflow:visible}
+.sticker-preview-copy h3{margin:6px 0 2px;font-family:"Caveat",cursive;font-size:28px;color:#a44e76}
+.sticker-preview-copy p{margin:0 0 10px;color:#815b70;font-size:13px}
+.selected-badge{display:inline-block;background:#e77fa7;color:#fff;font-size:11px;font-weight:900;padding:3px 11px;border-radius:999px;letter-spacing:.5px}
+.sticker-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.link-btn{border:0;background:transparent;color:#a17e92;text-decoration:underline;font-size:12px}
+.copy-status{display:block;min-height:1.2em;margin-top:6px;font-size:12px;font-weight:800;color:#4f9a6c}
+.sticker-selected{text-align:center;color:#a17e92;margin-top:16px}
+@media(max-width:600px){.sticker-preview{gap:10px;padding:10px 12px}.sticker-preview-art{width:78px;height:78px}.sticker-preview-art svg,.sticker-preview-art img{width:66px;height:66px}.sticker-preview-copy h3{font-size:22px}.sticker-preview-copy p{display:none}}
+
+/* ===== dark mode for the new bits ===== */
+body.dark .full-calendar{background:linear-gradient(180deg,color-mix(in srgb,var(--cal-accent) 18%,#302735),#302735 65%)}
+body.dark .full-calendar .full-cal-day,body.dark .month-theme-card .full-cal-day{background:#3a3040;color:#ead9e3;border-color:#594354}
+body.dark .selected-date-panel,body.dark .selected-reminders{background:#3a3040;border-color:#594354;color:#ead9e3}body.dark .selected-reminders h4{color:#ffe596}
+body.dark .sticker-tile{background:#3a3040;border-color:#594354}body.dark .sticker-tile.chosen{background:#4a3043;border-color:#e77fa7}
+body.dark .sticker-preview{background:#302735;border-color:#7a5470}body.dark .sticker-preview-art{background:repeating-conic-gradient(#3a3040 0 25%,#302735 0 50%) 0 0/16px 16px;border-color:#594354}
+body.dark .sticker-preview-copy p,body.dark .sticker-selected{color:#cfb2c3}body.dark .copy-status{color:#8fd9ad}
+body.dark .brand-logo svg{filter:drop-shadow(0 6px 10px #00000055)}
+
+.selected-reminders{--cal-accent:#efc45a;--cal-dark:#9a7421;--cal-soft:#fff3cf}
+.selected-reminders .rem-form button{background:#e9b949;color:#fff;border:0;border-radius:12px;width:40px;font-size:18px;font-weight:900}
+.selected-reminders .rem-form input,.selected-reminders .rem-form select{border:1px solid #efd48a;border-radius:12px;padding:8px 10px;background:#fff;font-size:13px}
+.selected-reminders .rem-form{display:flex;gap:8px;flex-wrap:wrap}.selected-reminders .rem-form input{flex:1 1 100%}.selected-reminders .rem-form select{flex:1}
+.full-cal-toolbar>div{display:grid;place-items:center}
